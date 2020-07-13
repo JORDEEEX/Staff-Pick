@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container p-4" style="height: calc(100vh - 0px - 130px)">
+  <div class="jumbotron jumbotron-fluid" style="width: 1340px;  position: relative; right: 125px;">
+    <h2 class="display-8 text-center">Registro de respuestas</h2>
+    <hr class="my-4">
+    <div class="container" style="width: 1800px;">
+      <table class="table table-dark" style="width: 1320px; position: relative; right: 105px; ">
+        <thead>
+          <tr>
+            <th scope="col">DNI</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Postula a</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Test</th>
+            <th scope="col">Resultado</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in personas %}
+          <tr>
+            <td>{{i.1}}</td>
+            <td>{{i.2}}</td>
+            <td>{{i.3}}</td>
+            <td>{{i.4}}</td>
+            <td>{{i.5}}</td>
+            <td>{{i.6}}</td>
+            <td>{{i.7}}</td>
+            <td>{{i.8}}</td>
+            <td>{{i.9}}</td>
+            <td>{{i.10}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="col-xs-3 ml-auto">
+        <a href="/homeadmin" class="btn btn-dark">Volver</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{%endblock%}

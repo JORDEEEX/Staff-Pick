@@ -1,0 +1,694 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <header style="height: 100px">
+    <div class="card-header" style="height: 50px">POSTULACIÓN A EMPLEO</div>
+  </header>
+  
+  <div style="height: 30px;"></div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <form id="form1" action="/add_answerthree" method="post" class="needs-validation">
+          <div class="card shadow-lg p-3 mb-5 bg-white ">
+            <div class="card-header">Formulario de prueba</div>
+            <div class="card-body">
+              <div class="float-md-right">
+  
+              </div>
+              <div class="form-row">
+                <div class="col-md-10 mb-3">
+                  <label for="nombre">Nombres</label>
+                  <input name="name" required="required" type="text" class="form-control" id="nombre"
+                    placeholder="INGRESE SUS NOMBRES" value="">
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-10 mb-3">
+                  <label for="lastname">Apellidos</label>
+                  <input name="lastname" required="required" type="text" class="form-control" id="apellido"
+                    placeholder="INGRESE SUS NOMBRES" value="" required>
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="id">DNI</label>
+                  <input name="id" type="text" class="form-control" id="id" placeholder="INGRESE SU DNI" value=""
+                    required>
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="edad">EDAD</label>
+                  <input name="age" type="number" class="form-control" id="age" placeholder="INGRESE SU EDAD" value=""
+                    required>
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-10 mb-3">
+                  <label for="sexo">Puesto</label>
+                  <select name="job" id="" class="form-control">
+                    <option value="Agente de recursos humanos">Agente de recursos humanos</option>
+                    <option value="Desarrollador web">Desarrollador web</option>
+                  </select>
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-10 mb-3">
+                  <label for="sexo">Sexo</label>
+                  <select name="sexo" id="" class="form-control">
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                  </select>
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+              </div>
+  
+              <div class="container-fluid navbar-fixed-top">
+                <div class="row flex-items-xs-between menu-1 flex-items-xs-middle">
+                  <div class="col-xs-3">
+                    <a data-scroll href="#sec-1" class="btn btn-danger" role="button" aria-pressed="true">Comenzar</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-12">
+  
+            </div>
+          </div>
+  
+  
+  
+          <div class="col-lg-12">
+  
+            <div class="card-body">
+  
+              <div class="flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1">
+  
+                <div class="card shadow-lg p-3 mb-5 bg-white">
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 1</div>
+                      <div style="height: 10px;"></div>
+                   
+                      <label for="1">En la empresa se observan despidos masivos.</label><br>
+                      <input name="1" type="radio" class="form" id="respuesta1" value="0" required>
+
+                      <label for="respuesta1" class="form">Nunca</label><br>
+                      <input name="1" type="radio" class="form" id="respuesta2" value="1" required>
+                      <label for="respuesta2">A veces</label><br>
+  
+                      <input type="radio" name="1" class="form" id="respuesta3" value="2" required>
+                      <label for="respuesta3">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 2</div>
+                      <div style="height: 10px;"></div>
+                      <label for="2">La administración es rígida y autoritaria en mi área de
+                        trabajo.</label><br>
+  
+                      <input name="2" type="radio" class="form" id="respuesta4" value="0" required>
+                      <label for="respuesta4" class="form">Nunca</label><br>
+  
+                      <input name="2" type="radio" class="form" id="respuesta5" value="1" required>
+                      <label for="respuesta5">A veces</label><br>
+  
+                      <input name="2" type="radio" class="form" id="respuesta6" value="2" required>
+                      <label for="respuesta6">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 3</div>
+                      <div style="height: 10px;"></div>
+                      <label for="3">Existe presión por obtener mayor productividad.</label><br>
+  
+                      <input name="3" type="radio" class="form" id="respuesta7" value="0" required>
+                      <label for="respuesta7" class="form">Nunca</label><br>
+  
+                      <input name="3" type="radio" class="form" id="respuesta8" value="1" required>
+                      <label for="respuesta8">A veces</label><br>
+  
+                      <input name="3" type="radio" class="form" id="respuesta9" value="2" required>
+                      <label for="respuesta9">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 4</div>
+                      <div style="height: 10px;"></div>
+                      <label for="4">Las Tareas no son claras y contradictorias.</label><br>
+  
+                      <input name="4" type="radio" class="form" id="respuesta10" value="0" required>
+                      <label for="respuesta10" class="form">Nunca</label><br>
+  
+                      <input name="4" type="radio" class="form" id="respuesta11" value="1" required>
+                      <label for="respuesta11">A veces</label><br>
+  
+                      <input name="4" type="radio" class="form" id="respuesta12" value="2" required>
+                      <label for="respuesta12">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 5</div>
+                      <div style="height: 10px;"></div>
+                      <label for="5">Existe peligros al realizar las tareas del trabajo.</label><br>
+  
+                      <input name="5" type="radio" class="form" id="respuesta13" value="0" required>
+                      <label for="respuesta13" class="form">Nunca</label><br>
+  
+                      <input name="5" type="radio" class="form" id="respuesta14" value="1" required>
+                      <label for="respuesta14">A veces</label><br>
+  
+                      <input name="5" type="radio" class="form" id="respuesta15" value="2" required>
+                      <label for="respuesta15">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 6</div>
+                      <div style="height: 10px;"></div>
+                      <label for="6">Se presentan alteraciones e interrupciones inesperadas.</label><br>
+  
+                      <input name="6" type="radio" class="form" id="respuesta16" value="0" required>
+                      <label for="respuesta16" class="form">Nunca</label><br>
+  
+                      <input name="6" type="radio" class="form" id="respuesta17" value="1" required>
+                      <label for="respuesta17">A veces</label><br>
+  
+                      <input name="6" type="radio" class="form" id="respuesta18" value="2" required>
+                      <label for="respuesta18">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 7</div>
+                      <div style="height: 10px;"></div>
+                      <label for="7">Existe falta de relajamiento.</label><br>
+  
+                      <input name="7" type="radio" class="form" id="respuesta19" value="0" required>
+                      <label for="respuesta19" class="form">Nunca</label><br>
+  
+                      <input name="7" type="radio" class="form" id="respuesta20" value="1" required>
+                      <label for="respuesta20">A veces</label><br>
+  
+                      <input name="7" type="radio" class="form" id="respuesta21" value="2" required>
+                      <label for="respuesta21">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 8</div>
+                      <div style="height: 10px;"></div>
+                      <label for="8">Clima laboral desmotivador.</label><br>
+  
+                      <input name="8" type="radio" class="form" id="respuesta22" value="0" required>
+                      <label for="respuesta22" class="form">Nunca</label><br>
+  
+                      <input name="8" type="radio" class="form" id="respuesta23" value="1" required>
+                      <label for="respuesta23">A veces</label><br>
+  
+                      <input name="8" type="radio" class="form" id="respuesta24" value="2" required>
+                      <label for="respuesta24">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 9</div>
+                      <div style="height: 10px;"></div>
+                      <label for="9">Falta de reconocimiento por las tareas realizadas.</label><br>
+  
+                      <input name="9" type="radio" class="form" id="respuesta25" value="0" required>
+                      <label for="respuesta25" class="form">Nunca</label><br>
+  
+                      <input name="9" type="radio" class="form" id="respuesta26" value="1" required>
+                      <label for="respuesta26">A veces</label><br>
+  
+                      <input name="9" type="radio" class="form" id="respuesta27" value="2" required>
+                      <label for="respuesta27">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 10</div>
+                      <div style="height: 10px;"></div>
+                      <label for="10">Imprecisiones o falta de claridad acerca de la tarea, responsabilidad,
+                        derechos.</label><br>
+  
+                      <input name="10" type="radio" class="form" id="respuesta28" value="0" required>
+                      <label for="respuesta28" class="form">Nunca</label><br>
+  
+                      <input name="10" type="radio" class="form" id="respuesta29" value="1" required>
+                      <label for="respuesta29">A veces</label><br>
+  
+                      <input name="10" type="radio" class="form" id="respuesta30" value="2" required>
+                      <label for="respuesta30">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 11</div>
+                      <div style="height: 10px;"></div>
+                      <label for="11">Elevada sobre exigencia en sus tareas y funciones.</label><br>
+  
+                      <input name="11" type="radio" class="form" id="respuesta31" value="0" required>
+                      <label for="respuesta31" class="form">Nunca</label><br>
+  
+                      <input name="11" type="radio" class="form" id="respuesta32" value="1" required>
+                      <label for="respuesta32">A veces</label><br>
+  
+                      <input name="11" type="radio" class="form" id="respuesta33" value="2" required>
+                      <label for="respuesta33">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 12</div>
+                      <div style="height: 10px;"></div>
+                      <label for="12">Ausencia de mbientes de recreación como actividades deportivas, y
+                        otros.</label><br>
+  
+                      <input name="12" type="radio" class="form" id="respuesta34" value="0" required>
+                      <label for="respuesta34" class="form">Nunca</label><br>
+  
+                      <input name="12" type="radio" class="form" id="respuesta35" value="1" required>
+                      <label for="respuesta35">A veces</label><br>
+  
+                      <input name="12" type="radio" class="form" id="respuesta36" value="2" required>
+                      <label for="respuesta36">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 13</div>
+                      <div style="height: 10px;"></div>
+                      <label for="13">Preocupación y valoración por la calidad de vida de
+                        trabajadores.</label><br>
+  
+                      <input name="13" type="radio" class="form" id="respuesta37" value="0" required>
+                      <label for="respuesta37" class="form">Nunca</label><br>
+  
+                      <input name="13" type="radio" class="form" id="respuesta38" value="1" required>
+                      <label for="respuesta38">A veces</label><br>
+  
+                      <input name="13" type="radio" class="form" id="respuesta39" value="2" required>
+                      <label for="respuesta39">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 14</div>
+                      <div style="height: 10px;"></div>
+                      <label for="14">Tengo elevada actitud perfeccionista - auto exigencia en metas y
+                        plazos.</label><br>
+  
+                      <input name="14" type="radio" class="form" id="respuesta40" value="0" required>
+                      <label for="respuesta40" class="form">Nunca</label><br>
+  
+                      <input name="14" type="radio" class="form" id="respuesta41" value="1" required>
+                      <label for="respuesta41">A veces</label><br>
+  
+                      <input name="14" type="radio" class="form" id="respuesta42" value="2" required>
+                      <label for="respuesta42">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 15</div>
+                      <div style="height: 10px;"></div>
+                      <label for="15">Inadecuada estructuración de los tiempos en las tareas que
+                        realiza.</label><br>
+  
+                      <input name="15" type="radio" class="form" id="respuesta43" value="0" required>
+                      <label for="respuesta43" class="form">Nunca</label><br>
+  
+                      <input name="15" type="radio" class="form" id="respuesta44" value="1" required>
+                      <label for="respuesta44">A veces</label><br>
+  
+                      <input name="15" type="radio" class="form" id="respuesta45" value="2" required>
+                      <label for="respuesta45">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 16</div>
+                      <div style="height: 10px;"></div>
+                      <label for="16">Bajo nivel de interacción con los compañeros.</label><br>
+  
+                      <input name="16" type="radio" class="form" id="respuesta46" value="0" required>
+                      <label for="respuesta46" class="form">Nunca</label><br>
+  
+                      <input name="16" type="radio" class="form" id="respuesta47" value="1" required>
+                      <label for="respuesta47">A veces</label><br>
+  
+                      <input name="16" type="radio" class="form" id="respuesta48" value="2" required>
+                      <label for="respuesta48">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 17</div>
+                      <div style="height: 10px;"></div>
+                      <label for="17">Percepción de relaciones conflictivas entre compañeros.</label><br>
+  
+                      <input name="17" type="radio" class="form" id="respuesta49" value="0" required>
+                      <label for="respuesta49" class="form">Nunca</label><br>
+  
+                      <input name="17" type="radio" class="form" id="respuesta50" value="1" required>
+                      <label for="respuesta50">A veces</label><br>
+  
+                      <input name="17" type="radio" class="form" id="respuesta51" value="2" required>
+                      <label for="respuesta51">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 18</div>
+                      <div style="height: 10px;"></div>
+                      <label for="18">Percepción de relaciones profundas de amistad en el trabajo.</label><br>
+  
+                      <input name="18" type="radio" class="form" id="respuesta52" value="0" required>
+                      <label for="respuesta52" class="form">Nunca</label><br>
+  
+                      <input name="18" type="radio" class="form" id="respuesta53" value="1" required>
+                      <label for="respuesta53">A veces</label><br>
+  
+                      <input name="18" type="radio" class="form" id="respuesta54" value="2" required>
+                      <label for="respuesta54">Siempre</label>
+                    </div>
+                  </div>
+  
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 19</div>
+                      <div style="height: 10px;"></div>
+                      <label for="19">Percepción de Trabajo bajo presión.</label><br>
+  
+                      <input name="19" type="radio" class="form" id="respuesta55" value="0" required>
+                      <label for="respuesta55" class="form">Nunca</label><br>
+  
+                      <input name="19" type="radio" class="form" id="respuesta56" value="1" required>
+                      <label for="respuesta56">A veces</label><br>
+  
+                      <input name="19" type="radio" class="form" id="respuesta57" value="2" required>
+                      <label for="respuesta57">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 20</div>
+                      <div style="height: 10px;"></div>
+                      <label for="20">Percepción de carencia de oportunidades.</label><br>
+  
+                      <input name="20" type="radio" class="form" id="respuesta58" value="0" required>
+                      <label for="respuesta58" class="form">Nunca</label><br>
+  
+                      <input name="20" type="radio" class="form" id="respuesta59" value="1" required>
+                      <label for="respuesta59">A veces</label><br>
+  
+                      <input name="20" type="radio" class="form" id="respuesta60" value="2" required>
+                      <label for="respuesta60">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 21</div>
+                      <div style="height: 10px;"></div>
+                      <label for="21">Percepción de reconocimiento por parte de la empresa.</label><br>
+  
+                      <input name="21" type="radio" class="form" id="respuesta61" value="0" required>
+                      <label for="respuesta61" class="form">Nunca</label><br>
+  
+                      <input name="21" type="radio" class="form" id="respuesta62" value="1" required>
+                      <label for="respuesta62">A veces</label><br>
+  
+                      <input name="21" type="radio" class="form" id="respuesta63" value="2" required>
+                      <label for="respuesta63">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 22</div>
+                      <div style="height: 10px;"></div>
+                      <label for="22">Percepción de sentimiento de equipo.</label><br>
+  
+                      <input name="22" type="radio" class="form" id="respuesta64" value="0" required>
+                      <label for="respuesta64" class="form">Nunca</label><br>
+  
+                      <input name="22" type="radio" class="form" id="respuesta65" value="1" required>
+                      <label for="respuesta65">A veces</label><br>
+  
+                      <input name="22" type="radio" class="form" id="respuesta66" value="2" required>
+                      <label for="respuesta66">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 23</div>
+                      <div style="height: 10px;"></div>
+                      <label for="23">Ambigüedad de funciones.</label><br>
+  
+                      <input name="23" type="radio" class="form" id="respuesta67" value="0" required>
+                      <label for="respuesta67" class="form">Nunca</label><br>
+  
+                      <input name="23" type="radio" class="form" id="respuesta68" value="1" required>
+                      <label for="respuesta68">A veces</label><br>
+  
+                      <input name="23" type="radio" class="form" id="respuesta69" value="2" required>
+                      <label for="respuesta69">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 24</div>
+                      <div style="height: 10px;"></div>
+                      <label for="24">Necesidad de extender la jornada habitual de trabajo.</label><br>
+  
+                      <input name="24" type="radio" class="form" id="respuesta70" value="0" required>
+                      <label for="respuesta70" class="form">Nunca</label><br>
+  
+                      <input name="24" type="radio" class="form" id="respuesta71" value="1" required>
+                      <label for="respuesta71">A veces</label><br>
+  
+                      <input name="24" type="radio" class="form" id="respuesta72" value="2" required>
+                      <label for="respuesta72">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 25</div>
+                      <div style="height: 10px;"></div>
+                      <label for="25">Necesidad de doblar turnos.</label><br>
+  
+                      <input name="25" type="radio" class="form" id="respuesta73" value="0" required>
+                      <label for="respuesta73" class="form">Nunca</label><br>
+  
+                      <input name="25" type="radio" class="form" id="respuesta74" value="1" required>
+                      <label for="respuesta74">A veces</label><br>
+  
+                      <input name="25" type="radio" class="form" id="respuesta75" value="2" required>
+                      <label for="respuesta75">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 26</div>
+                      <div style="height: 10px;"></div>
+                      <label for="26">Carencia o insuficiencia de pausas para descanso durante la jornada
+                        laboral.</label><br>
+  
+                      <input name="26" type="radio" class="form" id="respuesta76" value="0" required>
+                      <label for="respuesta76" class="form">Nunca</label><br>
+  
+                      <input name="26" type="radio" class="form" id="respuesta77" value="1" required>
+                      <label for="respuesta77">A veces</label><br>
+  
+                      <input name="26" type="radio" class="form" id="respuesta78" value="2" required>
+                      <label for="respuesta78">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 27</div>
+                      <div style="height: 10px;"></div>
+                      <label for="27">Falta de inducción y reinducción del personal.</label><br>
+  
+                      <input name="27" type="radio" class="form" id="respuesta79" value="0" required>
+                      <label for="respuesta79" class="form">Nunca</label><br>
+  
+                      <input name="27" type="radio" class="form" id="respuesta80" value="1" required>
+                      <label for="respuesta80">A veces</label><br>
+  
+                      <input name="27" type="radio" class="form" id="respuesta81" value="2" required>
+                      <label for="respuesta81">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 28</div>
+                      <div style="height: 10px;"></div>
+                      <label for="28">Carencia de oportunidades.</label><br>
+  
+                      <input name="28" type="radio" class="form" id="respuesta82" value="0" required>
+                      <label for="respuesta82" class="form">Nunca</label><br>
+  
+                      <input name="28" type="radio" class="form" id="respuesta83" value="1" required>
+                      <label for="respuesta83">A veces</label><br>
+  
+                      <input name="28" type="radio" class="form" id="respuesta84" value="2" required>
+                      <label for="respuesta84">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 29</div>
+                      <div style="height: 10px;"></div>
+                      <label for="29">Estilo autocrático de dirección.</label><br>
+  
+                      <input name="29" type="radio" class="form" id="respuesta85" value="0" required>
+                      <label for="respuesta85" class="form">Nunca</label><br>
+  
+                      <input name="29" type="radio" class="form" id="respuesta86" value="1" required>
+                      <label for="respuesta86">A veces</label><br>
+  
+                      <input name="29" type="radio" class="form" id="respuesta87" value="2" required>
+                      <label for="respuesta87">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 30</div>
+                      <div style="height: 10px;"></div>
+                      <label for="30">Riesgo de contraer enfermedades relacionadas al trabajo.</label><br>
+  
+                      <input name="30" type="radio" class="form" id="respuesta88" value="0" required>
+                      <label for="respuesta88" class="form">Nunca</label><br>
+  
+                      <input name="30" type="radio" class="form" id="respuesta89" value="1" required>
+                      <label for="respuesta89">A veces</label><br>
+  
+                      <input name="30" type="radio" class="form" id="respuesta90" value="2" required>
+                      <label for="respuesta90">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 31</div>
+                      <div style="height: 10px;"></div>
+                      <label for="opciones31">Carencia de información sobre higiene y seguridad del
+                        trabajo.</label><br>
+  
+                      <input name="31" type="radio" class="form" id="respuesta91" value="0" required>
+                      <label for="respuesta91" class="form">Nunca</label><br>
+  
+                      <input name="31" type="radio" class="form" id="respuesta92" value="1" required>
+                      <label for="respuesta92">A veces</label><br>
+  
+                      <input name="31" type="radio" class="form" id="respuesta93" value="2" required>
+                      <label for="respuesta93">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 32</div>
+                      <div style="height: 10px;"></div>
+                      <label for="32">Contenido de las tareas y del trabajo con elevada
+                        dificultad.</label><br>
+  
+                      <input name="32" type="radio" class="form" id="respuesta94" value="0" required>
+                      <label for="respuesta94" class="form">Nunca</label><br>
+  
+                      <input name="32" type="radio" class="form" id="respuesta95" value="1" required>
+                      <label for="respuesta95">A veces</label><br>
+  
+                      <input name="32" type="radio" class="form" id="respuesta96" value="2" required>
+                      <label for="respuesta96">Siempre</label>
+                    </div>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 33</div>
+                      <div style="height: 10px;"></div>
+                      <label for="33">Elevado volumen de trabajo.</label><br>
+  
+                      <input name="33" type="radio" class="form" id="respuesta97" value="0" required>
+                      <label for="respuesta97" class="form">Nunca</label><br>
+  
+                      <input name="33" type="radio" class="form" id="respuesta98" value="1" required>
+                      <label for="respuesta98">A veces</label><br>
+  
+                      <input name="33" type="radio" class="form" id="respuesta99" value="2" required>
+                      <label for="respuesta99">Siempre</label>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-xs-3 ml-auto">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock%}

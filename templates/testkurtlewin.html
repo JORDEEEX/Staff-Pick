@@ -1,0 +1,650 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<header style="height: 100px">
+  <div class="card-header">TEST DE LIDERAZGO (Kurt Lewin)</div>
+</header>
+<div style="height: 5px;"></div>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <form id="form1" action="/addanswer" method="post" class="needs-validation">
+        <div class="card shadow-lg p-3 mb-5 bg-white ">
+          <div class="card-header">Formulario de prueba</div>
+          <div class="card-body">
+            <div class="float-md-right">
+
+            </div>
+            <div class="form-row">
+              <div class="col-md-10 mb-3">
+                <label for="nombre">Nombres</label>
+                <input name="name" required="required" type="text" class="form-control" id="nombre"
+                  placeholder="INGRESE SUS NOMBRES" value="">
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-10 mb-3">
+                <label for="lastname">Apellidos</label>
+                <input name="lastname" required="required" type="text" class="form-control" id="apellido"
+                  placeholder="INGRESE SUS NOMBRES" value="" required>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="id">DNI</label>
+                <input name="id" type="text" class="form-control" id="id" placeholder="INGRESE SU DNI" value=""
+                  required>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="edad">EDAD</label>
+                <input name="age" type="number" class="form-control" id="age" placeholder="INGRESE SU EDAD" value=""
+                  required>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-10 mb-3">
+                <label for="sexo">Puesto</label>
+                <select name="job" id="" class="form-control">
+                  <option value="Agente de recursos humanos">Agente de recursos humanos</option>
+                  <option value="Desarrollador web">Desarrollador web</option>
+                </select>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-10 mb-3">
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="" class="form-control">
+                  <option value="M">Masculino</option>
+                  <option value="F">Femenino</option>
+                </select>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+            </div>
+
+            <div class="container-fluid navbar-fixed-top">
+              <div class="row flex-items-xs-between menu-1 flex-items-xs-middle">
+                <div class="col-xs-3">
+                  <a data-scroll href="#sec-1" class="btn btn-danger" role="button" aria-pressed="true">Comenzar</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12">
+
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="col-lg-12">
+            <div class="card-body">
+              <!-- MENÚ -->
+
+
+              <!-- FIN MENU -->
+
+              <div class="card shadow-lg p-3 mb-5 bg-white ">
+                <div class="flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1">
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 1</div>
+                      <label for="opciones1">Un mando que mantiene relaciones amistosas
+                        con su personal le cuesta imponer disciplina.</label><br>
+                      <input name="1" type="radio" class="form" id="respuesta1" value="true" required>
+                      <label for="respuesta1" class="form">Acuerdo</label><br>
+
+                      <input name="1" type="radio" class="form" id="respuesta2" value="false" required>
+                      <label for="respuesta2">Desacuerdo</label><br>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 2</div>
+                      <label for="opciones2">Los empleados obedecen mejor los mandos amistosos que a los que no lo
+                        son.</label><br>
+
+                      <input name="2" type="radio" class="form" id="respuesta3" value="true" required>
+                      <label for="respuesta3">Acuerdo</label><br>
+                      <input name="2" type="radio" class="form" id="respuesta4" value="false" required>
+                      <label for="respuesta4">Desacuerdo</label><br>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 3</div>
+                      <label for="opciones3">Los contactos y las comunicaciones personales deben reducirse a un mínimo
+                        por
+                        parte del
+                        jefe. El mando ha de mantener los mínimos contactos y comunicaciones personales con sus
+                        subordinados.</label><br>
+
+                      <input name="3" type="radio" class="form" id="respuesta5" value="true" required>
+                      <label for="respuesta5">Acuerdo</label><br>
+                      <input name="3" type="radio" class="form" id="respuesta6" value="false" required>
+                      <label for="respuesta6">Desacuerdo</label><br>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+
+                    <div class="card-header">Pregunta 4</div>
+                    <label for="opciones4">Un mando debe hacer sentir siempre a su personal que él es el que
+                      manda.</label><br>
+
+                    <input name="4" type="radio" class="form" id="respuesta7" value="true" required>
+                    <label for="respuesta7">Acuerdo</label><br>
+
+                    <input name="4" type="radio" class="form" id="respuesta8" value="false" required>
+                    <label for="respuesta8">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <!-- separador -->
+                <div class="flex-items-xs-between menu-1 flex-items-xs-middle">
+                  <div class="col-xs-3">
+                    <a data-scroll href="#sec-2" class="btn btn-danger" role="button" aria-pressed="true">Sección-2</a>
+                  </div>
+                </div>
+                <div class="flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2">
+                  <br>
+                  <!-- fin de separador -->
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 5</div>
+                      <label for="opciones5">Un mando debe hacer reuniones para resolver desacuerdos sobre problemas
+                        importantes.</label><br>
+
+                      <input name="5" type="radio" class="form" id="respuesta9" value="true" required>
+                      <label for="respuesta9">Acuerdo</label><br>
+
+                      <input name="5" type="radio" class="form" id="respuesta10" value="false" required>
+                      <label for="respuesta10">Desacuerdo</label><br>
+
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 6</div>
+                      <label for="opciones6">Un mando no debe implicarse en la solución de diferencias de opiniones
+                        entre
+                        sus
+                        subordinados.</label><br>
+
+                      <input name="6" type="radio" class="form" id="respuest11" value="true" required>
+                      <label for="respuest11">Acuerdo</label><br>
+
+                      <input name="6" type="radio" class="form" id="respuesta12" value="false" required>
+                      <label for="respuesta12">Desacuerdo</label><br>
+
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 7</div>
+                      <label for="opciones7">Castigar la desobediencia a los reglamentos es una de las formas más
+                        eficientes para
+                        mantener la disciplina.</label><br>
+
+                      <input name="7" type="radio" class="form" id="respuesta13" value="true" required>
+                      <label for="respuesta13">Acuerdo</label><br>
+
+                      <input name="7" type="radio" class="form" id="respuesta14" value="false" required>
+                      <label for="respuesta14">Desacuerdo</label><br>
+
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                      <div class="card-header">Pregunta 8</div>
+                      <label for="opciones8">Es conveniente explicar el porqué de los objetivos y de las políticas de la
+                        empresa.</label><br>
+
+                      <input name="8" type="radio" class="form" id="respuesta15" value="true" required>
+                      <label for="respuesta15">Acuerdo</label><br>
+
+                      <input name="8" type="radio" class="form" id="respuesta16" value="false" required>
+                      <label for="respuesta16">Desacuerdo</label><br>
+
+                    </div>
+                  </div>
+
+
+                  <div class="flex-items-xs-between menu-1 flex-items-xs-middle">
+                    <div class="col-xs-3">
+                      <a data-scroll href="#sec-3" class="btn btn-danger" role="button"
+                        aria-pressed="true">Sección-3</a>
+                    </div>
+                  </div>
+
+
+                  <div class="flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-3">
+                    <br>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 9</div>
+                        <label for="opciones9">Cuando un subordinado no está de acuerdo con la solución que su superior
+                          da
+                          a un problema,
+                          lo mejor es pedir al subordinado que sugiera una mejor alternativa y atenerse a
+                          ella.</label><br>
+
+                        <input name="9" type="radio" class="form" id="respuesta17" value="true" required>
+                        <label for="respuesta17">Acuerdo</label><br>
+
+                        <input name="9" type="radio" class="form" id="respuesta18" value="false" required>
+                        <label for="respuesta18">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 10</div>
+                        <label for="opciones10">Cuando hay que establecer objetivos, es preferible que el mando lo haga
+                          solo.</label><br>
+
+                        <input name="10" type="radio" class="form" id="respuesta19" value="true" required>
+                        <label for="respuesta19">Acuerdo</label><br>
+
+                        <input name="10" type="radio" class="form" id="respuesta20" value="false" required>
+                        <label for="respuesta20">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 11</div>
+                        <label for="opciones11">Un mando debe mantener a su personal informado sobre cualquier decisión
+                          que le afecte.</label><br>
+
+                        <input name="11" type="radio" class="form" id="respuesta21" value="true" required>
+                        <label for="respuesta21">Acuerdo</label><br>
+
+                        <input name="11" type="radio" class="form" id="respuesta22" value="false" required>
+                        <label for="respuesta22">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 12</div>
+                        <label for="opciones12">El mando debe establecer los objetivos, y que sean los subordinados los
+                          que se repartan los
+                          trabajos y determinen la forma de llevarlos a cabo.</label><br>
+
+                        <input name="12" type="radio" class="form" id="respuesta23" value="true" required>
+                        <label for="respuesta23">Acuerdo</label><br>
+
+                        <input name="12" type="radio" class="form" id="respuesta24" value="false" required>
+                        <label for="respuesta24">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 13</div>
+                        <label for="opciones13">Usted considera que octubre es el mejor mes para hacer ciertas
+                          reparaciones. La mayoría de
+                          los trabajadores prefiere noviembre. Usted decide que será octubre</label><br>
+
+                        <input name="13" type="radio" class="form" id="respuesta25" value="true" required>
+                        <label for="respuesta25">Acuerdo</label><br>
+
+                        <input name="13" type="radio" class="form" id="respuesta26" value="false" required>
+                        <label for="respuesta26">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 14</div>
+                        <label for="opciones14">Usted considera que octubre es el mejor mes para hacer las reparaciones
+                          en
+                          la planta. Un
+                          subordinado dice que la mayoría prefiere noviembre. La mejor solución es someter el asunto a
+                          votación. </label><br>
+
+                        <input name="14" type="radio" class="form" id="respuesta27" value="true" required>
+                        <label for="respuesta27">Acuerdo</label><br>
+
+                        <input name="14" type="radio" class="form" id="respuesta28" value="false" required>
+                        <label for="respuesta28">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 15</div>
+                        <label for="opciones15">Para comunicaciones diarias de rutina, el mando debe alentar a sus
+                          subordinados a que se
+                          pongan en contacto con él. </label><br>
+
+                        <input name="15" type="radio" class="form" id="respuesta29" value="true" required>
+                        <label for="respuesta29">Acuerdo</label><br>
+
+                        <input name="15" type="radio" class="form" id="respuesta30" value="false" required>
+                        <label for="respuesta30">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <div class="card-header">Pregunta 16</div>
+                        <label for="opciones16">En grupo rara vez se encuentran soluciones satisfactorias a los
+                          problemas.</label><br>
+
+                        <input name="16" type="radio" class="form" id="respuesta31" value="true" required>
+                        <label for="respuesta31">Acuerdo</label><br>
+
+                        <input name="16" type="radio" class="form" id="respuesta32" value="false" required>
+                        <label for="respuesta32">Desacuerdo</label><br>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 17</div>
+                    <label for="opciones17">Si dos subordinados están en desacuerdo sobre la forma de ejecutar una
+                      tarea,
+                      lo mejor que
+                      puede hacer el mando es llamar a los dos a su despacho y buscar una solución entre los
+                      tres.</label><br>
+
+                    <input name="17" type="radio" class="form" id="respuesta33" value="true" required>
+                    <label for="respuesta33">Acuerdo</label><br>
+
+                    <input name="17" type="radio" class="form" id="respuesta34" value="false" required>
+                    <label for="respuesta34">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 18</div>
+                    <label for="opciones18">Los empleados que demuestren ser competentes no deben ser
+                      supervisados.</label><br>
+
+                    <input name="18" type="radio" class="form" id="respuesta35" value="true" required>
+                    <label for="respuesta35">Acuerdo</label><br>
+
+                    <input name="18" type="radio" class="form" id="respuesta36" value="false" required>
+                    <label for="respuesta36">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 19</div>
+                    <label for="opciones19">Cuando se discuten asuntos importantes, el supervisor no debe permitir al
+                      subordinado que
+                      manifieste sus diferencias de opiniones, excepto en privado.</label><br>
+
+                    <input name="19" type="radio" class="form" id="respuesta37" value="true" required>
+                    <label for="respuesta37">Acuerdo</label><br>
+
+                    <input name="19" type="radio" class="form" id="respuesta38" value="false" required>
+                    <label for="respuesta38">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 20</div>
+                    <label for="opciones20">Un mando debe supervisar las tareas de cerca, para tener oportunidad de
+                      establecer
+                      contactos y dirección personal.</label><br>
+
+                    <input name="20" type="radio" class="form" id="respuesta39" value="true" required>
+                    <label for="respuesta39">Acuerdo</label><br>
+
+                    <input name="20" type="radio" class="form" id="respuesta40" value="false" required>
+                    <label for="respuesta40">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 21</div>
+                    <label for="opciones21">Si dos subordinados están en desacuerdo sobre la forma de ejecutar una
+                      tarea,
+                      el mando
+                      debe pedirles que se reúnan para que resuelvan sus diferencias y que le avisen del
+                      resultado.</label><br>
+
+                    <input name="21" type="radio" class="form" id="respuesta41" value="true" required>
+                    <label for="respuesta41">Acuerdo</label><br>
+
+                    <input name="21" type="radio" class="form" id="respuesta42" value="false" required>
+                    <label for="respuesta42">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 22</div>
+                    <label for="opciones22">Un buen mando es aquél que puede despedir fácilmente a un subordinado cuando
+                      lo crea
+                      necesario.</label><br>
+
+                    <input name="22" type="radio" class="form" id="respuesta43" value="true" required>
+                    <label for="respuesta43">Acuerdo</label><br>
+
+                    <input name="22" type="radio" class="form" id="respuesta44" value="false" required>
+                    <label for="respuesta44">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 23</div>
+                    <label for="opciones23">Lo mejor que puede hacer un supervisor al asignar un trabajo es solicitar a
+                      subordinado que le
+                      ayude a preparar los objetivos.</label><br>
+
+                    <input name="23" type="radio" class="form" id="respuesta45" value="true" required>
+                    <label for="respuesta45">Acuerdo</label><br>
+
+                    <input name="23" type="radio" class="form" id="respuesta46" value="false" required>
+                    <label for="respuesta46">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 24</div>
+                    <label for="opciones24">Un mando no debe preocuparse por las diferencias de opinión que tenga con su
+                      personal. Se
+                      atiene al buen juicio de sus subordinados</label><br>
+
+                    <input name="24" type="radio" class="form" id="respuesta47" value="true" required>
+                    <label for="respuesta47">Acuerdo</label><br>
+
+                    <input name="24" type="radio" class="form" id="respuesta48" value="false" required>
+                    <label for="respuesta48">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 25</div>
+                    <label for="opciones25">Un subordinado debe lealtad en primer lugar a su mando inmediato</label><br>
+
+                    <input name="25" type="radio" class="form" id="respuesta49" value="true" required>
+                    <label for="respuesta49">Acuerdo</label><br>
+
+                    <input name="25" type="radio" class="form" id="respuesta50" value="false" required>
+                    <label for="respuesta50">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 26</div>
+                    <label for="opciones26">Cuando un subordinado critica a su jefe, lo mejor es discutir dichas
+                      diferencias en forma
+                      exhaustiva</label><br>
+
+                    <input name="26" type="radio" class="form" id="respuesta51" value="true" required>
+                    <label for="respuesta51">Acuerdo</label><br>
+
+                    <input name="26" type="radio" class="form" id="respuesta52" value="false" required>
+                    <label for="respuesta52">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 27</div>
+                    <label for="opciones27">Al supervisor le basta obtener datos de cada unidad bajo su supervisión para
+                      comparar
+                      resultados y detectar fácilmente las deficiencias.</label><br>
+
+                    <input name="27" type="radio" class="form" id="respuesta53" value="true" required>
+                    <label for="respuesta53">Acuerdo</label><br>
+
+                    <input name="27" type="radio" class="form" id="respuesta54" value="false" required>
+                    <label for="respuesta54">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 28</div>
+                    <label for="opciones28">Cuando se fijan objetivos, un mando no debe confiar mucho en las
+                      recomendaciones de sus
+                      subordinados.</label><br>
+
+                    <input name="28" type="radio" class="form" id="respuesta55" value="true" required>
+                    <label for="respuesta55">Acuerdo</label><br>
+
+                    <input name="28" type="radio" class="form" id="respuesta56" value="false" required>
+                    <label for="respuesta56">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 29</div>
+                    <label for="opciones29">Cuando se tienen que fijar objetivos, el supervisor debe fijarlos de
+                      preferencia a través de una
+                      discusión amplia con los subordinados inmediatos.</label><br>
+
+                    <input name="29" type="radio" class="form" id="respuesta57" value="true" required>
+                    <label for="respuesta57">Acuerdo</label><br>
+
+                    <input name="29" type="radio" class="form" id="respuesta58" value="false" required>
+                    <label for="respuesta58">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 30</div>
+                    <label for="opciones30">Son los subordinados mismos quienes deben procurarse adecuada información
+                      para
+                      su
+                      autocontrol.</label><br>
+
+                    <input name="30" type="radio" class="form" id="respuesta59" value="true" required>
+                    <label for="respuesta59">Acuerdo</label><br>
+
+                    <input name="30" type="radio" class="form" id="respuesta60" value="false" required>
+                    <label for="respuesta60">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 31</div>
+                    <label for="opciones31">No conviene promover reuniones de grupo pequeño con el personal. Es
+                      preferible
+                      realizar
+                      asambleas para comunicar las decisiones importantes.</label><br>
+
+                    <input name="31" type="radio" class="form" id="respuesta61" value="true" required>
+                    <label for="respuesta61">Acuerdo</label><br>
+
+                    <input name="31" type="radio" class="form" id="respuesta62" value="false" required>
+                    <label for="respuesta62">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 32</div>
+                    <label for="opciones32">Para ventilar los problemas de trabajo son preferibles los grupos pequeños,
+                      coordinados por el
+                      mando, a las asambleas.</label><br>
+
+                    <input name="32" type="radio" class="form" id="respuesta63" value="true" required>
+                    <label for="respuesta63">Acuerdo</label><br>
+
+                    <input name="32" type="radio" class="form" id="respuesta64" value="false" required>
+                    <label for="respuesta64">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-2">
+                    <div class="card-header">Pregunta 33</div>
+                    <label for="opciones33">El buen jefe se preocupa sólo de los resultados, sin entrometerse nunca a
+                      examinar los
+                      métodos y procedimientos que emplea su personal. </label><br>
+
+                    <input name="33" type="radio" class="form" id="respuesta65" value="true" required>
+                    <label for="respuesta65">Acuerdo</label><br>
+
+                    <input name="33" type="radio" class="form" id="respuesta66" value="false" required>
+                    <label for="respuesta66">Desacuerdo</label><br>
+
+                  </div>
+                </div>
+                <div class="col-xs-3 ml-auto">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock%}

@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container p-4">
+	<div class="jumbotron jumbotron-fluid p-6">
+		<div class="container " style="height: 500px;">
+			<h1 class="display-4">Test psicologicos</h1>
+			<p class="lead">Sistema experto de evaluación de rasgos de personalidad, como tu potencial para ser un
+				lider...</p>
+			<img style="width: 200px; position:relative; left:850px; bottom:170px;"
+				src="../static/images/kisspng-psychodiagnostik-rorschach-test-psychology-ink-blo-psychology-5ac53ab2b0fb40.0766486915228750587249.png"
+				alt="img">
+		</div>
+		<div class="row" style="position: absolute; top: 280px; ">
+			<div class="col-sm-6 ">
+				<div class="card bg-dark text-white " style="position: inherit; left: 30px;  width: 500px;">
+					<div class="card-body" style="height: 180px;">
+						<h5 class="card-title">Test de Liderazgo Kurt Lewin</h5>
+						<p class="card-text"> En este test definiremos tus
+							principales estilos de liderazgo.
+						</p>
+						<a href="/testkurtlewin" class="btn btn-light">Comenzar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card bg-dark text-white " style="position: inherit; left: 30px; width: 500px;">
+					<div class="card-body" style="height: 180px;">
+						<h5 class="card-title"> Test habilidades sociales</h5>
+						<p class="card-text">Cuestionario de habilidades sociales “en busca de mi crecimiento
+							personal”
+						</p>
+						<a href="/habilidadessociales" class="btn btn-light">Comenzar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="position: absolute; top: 500px; ">
+			<div class="col-sm-6 ">
+				<div class="card bg-dark text-white " style="position: inherit; left: 30px;  width: 500px;">
+					<div class="card-body" style="height: 180px;">
+						<h5 class="card-title">Test de Riesgos Laborales</h5>
+						<p class="card-text"> En este test definiremos tus
+							principales Riesgos.
+						</p>
+						<a href="/testRiesgosL" class="btn btn-light">Comenzar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card bg-dark text-white " style="position: inherit; left: 30px; width: 500px;">
+					<div class="card-body" style="height: 180px;">
+						<h5 class="card-title">Test de Inteligencia Emocional</h5>
+						<p class="card-text">Evalua tus aptitudes emocionales de tu personalidad
+						</p>
+						<a href="/testInteligenciaE" class="btn btn-light">Comenzar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{%endblock%}

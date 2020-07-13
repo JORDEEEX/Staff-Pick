@@ -1,0 +1,438 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header>
+    <div class="card-header" style="height: 50px">POSTULACIÓN A EMPLEO</div>
+</header>
+<div style="height: 30px;"></div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-12">
+            <form id="form1" action="/add_answertwo" method="post" class="needs-validation">
+                <div class="card shadow-lg p-3 mb-5 bg-white ">
+                    <div class="card-header">Formulario de prueba</div>
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="col-md-10 mb-3">
+                                <label for="nombre">Nombres</label>
+                                <input name="name" required="required" type="text" class="form-control" id="nombre"
+                                    placeholder="INGRESE SUS NOMBRES" value="">
+                                <div class="valid-feedback">¡Ok válido!</div>
+                                <div class="invalid-feedback">Complete el campo.</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-10 mb-3">
+                                <label for="lastname">Apellidos</label>
+                                <input name="lastname" required="required" type="text" class="form-control"
+                                    id="apellido" placeholder="INGRESE SUS NOMBRES" value="" required>
+                                <div class="valid-feedback">¡Ok válido!</div>
+                                <div class="invalid-feedback">Complete el campo.</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="id">DNI</label>
+                                <input name="id" type="text" class="form-control" id="id" placeholder="INGRESE SU DNI"
+                                    value="" required>
+                                <div class="valid-feedback">¡Ok válido!</div>
+                                <div class="invalid-feedback">Complete el campo.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="edad">EDAD</label>
+                                <input name="age" type="number" class="form-control" id="age"
+                                    placeholder="INGRESE SU EDAD" value="" required>
+                                <div class="valid-feedback">¡Ok válido!</div>
+                                <div class="invalid-feedback">Complete el campo.</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-10 mb-3">
+                                <label for="sexo">Puesto</label>
+                                <select name="job" id="" class="form-control">
+                                    <option value="Agente de recursos humanos">Agente de recursos humanos</option>
+                                    <option value="Desarrollador web">Desarrollador web</option>
+                                </select>
+                                <div class="valid-feedback">¡Ok válido!</div>
+                                <div class="invalid-feedback">Complete el campo.</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-10 mb-3">
+                                <label for="sexo">Sexo</label>
+                                <select name="sexo" id="" class="form-control">
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                </select>
+                                <div class="valid-feedback">¡Ok válido!</div>
+                                <div class="invalid-feedback">Complete el campo.</div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid navbar-fixed-top">
+                            <div class="row flex-items-xs-between menu-1 flex-items-xs-middle">
+                                <div class="col-xs-3">
+                                    <a data-scroll href="#sec-1" class="btn btn-danger" role="button"
+                                        aria-pressed="true">Comenzar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+
+                    <div class="card-body">
+
+                        <div class="flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1">
+
+                            <div class="card shadow-lg p-3 mb-5 bg-white">
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 1</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="oppciones1">Tengo conocimiento acerca de lo que son las
+                                            habilidades sociales. </label><br>
+
+                                        <input name="1" type="radio" class="form" id="respuesta1" value="0" required>
+                                        <label for="respuesta1" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="1" type="radio" class="form" id="respuesta2" value="1" required>
+                                        <label for="respuesta2">A veces, Poco o Algunos</label><br>
+
+                                        <input type="radio" name="1" class="form" id="respuesta3" value="2" required>
+                                        <label for="respuesta3">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 2</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones2">He aprendido cuales son los componentes de las
+                                            habilidades sociales.</label><br>
+
+                                        <input name="2" type="radio" class="form" id="respuesta4" value="0" required>
+                                        <label for="respuesta4" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="2" type="radio" class="form" id="respuesta5" value="1" required>
+                                        <label for="respuesta5">A veces, Poco o Algunos</label><br>
+
+                                        <input name="2" type="radio" class="form" id="respuesta6" value="2" required>
+                                        <label for="respuesta6">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 3</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="3">Se cuales son las características de las personas con
+                                            habilidades sociales.</label><br>
+
+                                        <input name="3" type="radio" class="form" id="respuesta7" value="0" required>
+                                        <label for="respuesta7" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="3" type="radio" class="form" id="respuesta8" value="1" required>
+                                        <label for="respuesta8">A veces, Poco o Algunos</label><br>
+
+                                        <input name="3" type="radio" class="form" id="respuesta9" value="2" required>
+                                        <label for="respuesta9">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 4</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones4">Se cuales son las características de las personas sin
+                                            habilidades sociales.</label><br>
+
+                                        <input name="4" type="radio" class="form" id="respuesta10" value="0" required>
+                                        <label for="respuesta10" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="4" type="radio" class="form" id="respuesta11" value="1" required>
+                                        <label for="respuesta11">A veces, Poco o Algunos</label><br>
+
+                                        <input name="4" type="radio" class="form" id="respuesta12" value="2" required>
+                                        <label for="respuesta12">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 5</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones5">Conozco la importancia de las habilidades sociales en
+                                            el entorno educativo.</label><br>
+
+                                        <input name="5" type="radio" class="form" id="respuesta13" value="0" required>
+                                        <label for="respuesta13" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="5" type="radio" class="form" id="respuesta14" value="1" required>
+                                        <label for="respuesta14">A veces, Poco o Algunos</label><br>
+
+                                        <input name="5" type="radio" class="form" id="respuesta15" value="2" required>
+                                        <label for="respuesta15">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 6</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones6">He analizado con detenimiento la película “Cadena de
+                                            Favores”.</label><br>
+
+                                        <input name="6" type="radio" class="form" id="respuesta16" value="0" required>
+                                        <label for="respuesta16" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="6" type="radio" class="form" id="respuesta17" value="1" required>
+                                        <label for="respuesta17">A veces, Poco o Algunos</label><br>
+
+                                        <input name="6" type="radio" class="form" id="respuesta18" value="2" required>
+                                        <label for="respuesta18">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 7</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones7">Cuando compro mi ropa soy quien elige el modelo que
+                                            deseo adquirir.</label><br>
+
+                                        <input name="7" type="radio" class="form" id="respuesta19" value="0" required>
+                                        <label for="respuesta19" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="7" type="radio" class="form" id="respuesta20" value="1" required>
+                                        <label for="respuesta20">A veces, Poco o Algunos</label><br>
+
+                                        <input name="7" type="radio" class="form" id="respuesta21" value="2" required>
+                                        <label for="respuesta21">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 8</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones8">Cuando converso con las personas les digo cosas feas
+                                            sin importar herir sus sentimientos.</label><br>
+
+                                        <input name="8" type="radio" class="form" id="respuesta22" value="0" required>
+                                        <label for="respuesta22" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="8" type="radio" class="form" id="respuesta23" value="1" required>
+                                        <label for="respuesta23">A veces, Poco o Algunos</label><br>
+
+                                        <input name="8" type="radio" class="form" id="respuesta24" value="2" required>
+                                        <label for="respuesta24">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 9</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones9">Me gusta tener muchos amigos para conversar con
+                                            ellos.</label><br>
+
+                                        <input name="9" type="radio" class="form" id="respuesta25" value="0" required>
+                                        <label for="respuesta25" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="9" type="radio" class="form" id="respuesta26" value="1" required>
+                                        <label for="respuesta26">A veces, Poco o Algunos</label><br>
+
+                                        <input name="9" type="radio" class="form" id="respuesta27" value="2" required>
+                                        <label for="respuesta27">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 10</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones10">Cuando converso con otras personas me fijo no
+                                            solamente lo que habla sino también sus gestos.</label><br>
+
+                                        <input name="10" type="radio" class="form" id="respuesta28" value="0" required>
+                                        <label for="respuesta28" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="10" type="radio" class="form" id="respuesta29" value="1" required>
+                                        <label for="respuesta29">A veces, Poco o Algunos</label><br>
+
+                                        <input name="10" type="radio" class="form" id="respuesta30" value="2" required>
+                                        <label for="respuesta30">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 11</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="11">Cuando alguna amiga hace cosas malas la juzgo sin
+                                            importar que motivos tuvo para hacer lo que hizo. </label><br>
+
+                                        <input name="11" type="radio" class="form" id="respuesta31" value="0" required>
+                                        <label for="respuesta31" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="11" type="radio" class="form" id="respuesta32" value="1" required>
+                                        <label for="respuesta32">A veces, Poco o Algunos</label><br>
+
+                                        <input name="11" type="radio" class="form" id="respuesta33" value="2" required>
+                                        <label for="respuesta33">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 12</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones12">Cuando hago nuevos amigos los acepto tal y como
+                                            son.</label><br>
+
+                                        <input name="12" type="radio" class="form" id="respuesta34" value="0" required>
+                                        <label for="respuesta34" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="12" type="radio" class="form" id="respuesta35" value="1" required>
+                                        <label for="respuesta35">A veces, Poco o Algunos</label><br>
+
+                                        <input name="12" type="radio" class="form" id="respuesta36" value="2" required>
+                                        <label for="respuesta36">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 13</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones13">Me quiero y me acepto tal y como soy.</label><br>
+
+                                        <input name="13" type="radio" class="form" id="respuesta37" value="0" required>
+                                        <label for="respuesta37" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="13" type="radio" class="form" id="respuesta38" value="1" required>
+                                        <label for="respuesta38">A veces, Poco o Algunos</label><br>
+
+                                        <input name="13" type="radio" class="form" id="respuesta39" value="2" required>
+                                        <label for="respuesta39">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 14</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones14">Me preocupo mucho por mi apariencia
+                                            personal.</label><br>
+
+                                        <input name="14" type="radio" class="form" id="respuesta40" value="0" required>
+                                        <label for="respuesta40" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="14" type="radio" class="form" id="respuesta41" value="1" required>
+                                        <label for="respuesta41">A veces, Poco o Algunos</label><br>
+
+                                        <input name="14" type="radio" class="form" id="respuesta42" value="2" required>
+                                        <label for="respuesta42">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 15</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones15">Cuando me hacen renegar trato de controlarme y no
+                                            explotar.</label><br>
+
+                                        <input name="15" type="radio" class="form" id="respuesta43" value="0" required>
+                                        <label for="respuesta43" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="15" type="radio" class="form" id="respuesta44" value="1" required>
+                                        <label for="respuesta44">A veces, Poco o Algunos</label><br>
+
+                                        <input name="15" type="radio" class="form" id="respuesta45" value="2" required>
+                                        <label for="respuesta45">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 16</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones16"> Soy muy nerviosa y las personas se dan cuenta
+                                            rápido.</label><br>
+
+                                        <input name="16" type="radio" class="form" id="respuesta46" value="0" required>
+                                        <label for="respuesta46" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="16" type="radio" class="form" id="respuesta47" value="1" required>
+                                        <label for="respuesta47">A veces, Poco o Algunos</label><br>
+
+                                        <input name="16" type="radio" class="form" id="respuesta48" value="2" required>
+                                        <label for="respuesta48">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 17</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones17">Se que es un “Proyecto de Vida”.</label><br>
+
+                                        <input name="17" type="radio" class="form" id="respuesta49" value="0" required>
+                                        <label for="respuesta49" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="17" type="radio" class="form" id="respuesta50" value="1" required>
+                                        <label for="respuesta50">A veces, Poco o Algunos</label><br>
+
+                                        <input name="17" type="radio" class="form" id="respuesta51" value="2" required>
+                                        <label for="respuesta51">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-2">
+                                        <div class="card-header">Pregunta 18</div>
+                                        <div style="height: 10px;"></div>
+                                        <label for="opciones18">He hecho planes para mi futuro analizando mis
+                                            habilidades.</label><br>
+
+                                        <input name="18" type="radio" class="form" id="respuesta52" value="0" required>
+                                        <label for="respuesta52" class="form">Nunca, Nada o Ninguno</label><br>
+
+                                        <input name="18" type="radio" class="form" id="respuesta53" value="1" required>
+                                        <label for="respuesta53">A veces, Poco o Algunos</label><br>
+
+                                        <input name="18" type="radio" class="form" id="respuesta54" value="2" required>
+                                        <label for="respuesta54">Siempre, Mucho o Varios </label>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <div class="col-xs-3 ml-auto">
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}
