@@ -15,11 +15,10 @@ _Link de la pagina web -> https://staff-pick2020.herokuapp.com/_
 ### Pre-requisitos 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
-_Instalacion de entrorno virtual, librerias necesarias en el archivo requirements.txt_
+_ - Instalacion de entrorno virtual, librerias necesarias en el archivo requirements.txt_
 #
 #
 #
-#Copyright
 #
 ## Autores ✒️
 
