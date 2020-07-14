@@ -6,10 +6,10 @@ from flask import session
 app = Flask(__name__)
 
 
-app.config['MYSQL_HOST'] = 'us-cdbr-east-02.cleardb.com'
-app.config['MYSQL_USER'] = 'b13278bf55e8e3'  
-app.config['MYSQL_PASSSWORD'] = '2aba0f5b' 
-app.config['MYSQL_DB'] = 'heroku_7482485d225da5a' 
+app.config['MYSQL_HOST'] = '35.198.26.171'
+app.config['MYSQL_USER'] = 'jordeeex'  
+app.config['MYSQL_PASSSWORD'] = '' 
+app.config['MYSQL_DB'] = 'StaffPick' 
 mysql = MySQL(app)
 
 
