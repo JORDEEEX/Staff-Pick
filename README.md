@@ -14,8 +14,8 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 _Link de la pagina web -> https://staff-pick2020.herokuapp.com/_
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas._
-_Instalacion de entrorno virtual, librerias necesarias en el archivo requirements.txt_
+*Que cosas necesitas para instalar el software y como instalarlas.*
+*Instalacion de entrorno virtual, librerias necesarias en el archivo requirements.txt*
 #
 #
 #
